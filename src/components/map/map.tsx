@@ -1,13 +1,13 @@
-﻿import {City, Offer} from "@/api/types.ts";
-import {Icon, layerGroup, Marker} from "leaflet";
-import {URL_MARKER_CURRENT, URL_MARKER_DEFAULT} from "@/constants/url-markers.ts";
-import {useEffect, useRef} from "react";
-import useMap from "@/components/hooks/use-map.tsx";
+﻿import {City, Offer} from '@/api/types.ts';
+import {Icon, layerGroup, Marker} from 'leaflet';
+import {URL_MARKER_CURRENT, URL_MARKER_DEFAULT} from '@/constants/url-markers.ts';
+import {useEffect, useRef} from 'react';
+import useMap from '@/components/hooks/use-map.tsx';
 
 interface MapProps {
-  city: City
-  offers: Offer[]
-  selectedOffer: Offer | undefined
+  city: City;
+  offers: Offer[];
+  selectedOffer: Offer | undefined;
 }
 
 const defaultCustomIcon = new Icon({
